@@ -11,10 +11,10 @@ public class LinkedHashMapTest{
         final int MAX_ENTRIES = 5;
 
         LinkedHashMap lhm = new LinkedHashMap(MAX_ENTRIES + 1, .75F, false) {
-			@Override
-            protected boolean removeEldestEntry(Map.Entry eldest) {
-                return size() > MAX_ENTRIES;
-            }
+		@Override
+            	protected boolean removeEldestEntry(Map.Entry eldest) {
+                	return size() > MAX_ENTRIES;
+            	}
         };
         lhm.put(0, "H");
         lhm.put(1, "E");
