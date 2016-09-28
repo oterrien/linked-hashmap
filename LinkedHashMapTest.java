@@ -28,5 +28,4 @@ public class LinkedHashMapTest{
 
         System.out.println("" + lhm);
     }
-
 }
